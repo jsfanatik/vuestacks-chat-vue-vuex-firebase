@@ -1,5 +1,5 @@
 <template>
-  <div class="welcome container">
+  <div class="home container">
     <div class="card">
       <div class="card-content center-align">
         <form @submit.prevent="enterChat">
@@ -36,14 +36,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-  .welcome {
+  .home {
     max-width: 400px;
     margin-top: 100px;
   }
-  .welcome h2 {
-    font-size: 3em;
-  }
-  .welcome button {
+  .home button {
     margin: 30px;
   }
 </style>
