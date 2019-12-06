@@ -1,13 +1,17 @@
 <template>
-  <div class="home container">
-    <div class="card">
-      <div class="card-content center-align">
-        <form @submit.prevent="enterChat">
-          <h4 for="name">Enter your name:</h4>
-          <input type="text" name="name" v-model="name"/>
-          <p v-if="feedback" class="green-text">{{ feedback }}</p>
-          <button class="btn green">Enter Chat</button>
-        </form>
+  <div class="row">
+    <div class="col s6 offset-s3">
+      <div class="container">
+        <div class="card">
+          <div class="card-content">
+            <form @submit.prevent="enterChat">
+              <h4 for="name">Enter your name:</h4>
+              <input type="text" name="name" v-model="name"/>
+              <p v-if="feedback" class="green-text">{{ feedback }}</p>
+              <button class="btn green">Enter Chat</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -36,11 +40,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-  .home {
-    max-width: 400px;
-    margin-top: 100px;
-  }
-  .home button {
-    margin: 30px;
-  }
 </style>

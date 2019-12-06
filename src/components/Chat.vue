@@ -36,7 +36,6 @@
 </template>
 
 <script>
-// import moment from 'moment'
 import { db } from '@/main'
 import { mapState } from 'vuex'
 export default {
