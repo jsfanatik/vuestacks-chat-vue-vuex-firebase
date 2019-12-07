@@ -3,7 +3,7 @@
     <div class="col s6 offset-s3">
       <div class="container">
         <div class="card">
-          <div class="card-content">
+          <div class="card-content center-align">
             <form @submit.prevent="enterChat">
               <h4 for="name">Enter your name:</h4>
               <input type="text" name="name" v-model="name"/>
